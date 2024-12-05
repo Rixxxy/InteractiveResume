@@ -1,0 +1,142 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header {
+    background-color: #ff6347;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 30px;
+}
+
+#form-section, #preview-section {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    border: 4px dashed #ff6347;
+}
+
+#form-section {
+    flex: 1 1 45%;
+}
+
+#preview-section {
+    flex: 1 1 45%;
+}
+
+h1, h2, h3, h4 {
+    margin-top: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ff6347;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 2px solid #ff6347;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #ffa07a;
+}
+
+button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    cursor: pointer;
+    margin-top: 8px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #ffa07a;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
+
+.delete-entry {
+    background-color: #d9534f;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 6px;
+    margin-top: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.delete-entry:hover {
+    background-color: #c9302c;
+}
+
+#resume-preview {
+    border: 2px solid #ff6347;
+    border-radius: 12px;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-height: 600px;
+}
+
+#resume-preview h3,
+#resume-preview h4 {
+    color: #ff6347;
+    margin-bottom: 10px;
+}
+
+#resume-preview p {
+    margin: 10px 0;
+}
+
+#resume-preview ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    #form-section, #preview-section {
+        max-width: 100%;
+    }
+}

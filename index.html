@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Resume Builder</h1>
+    </header>
+    <main>
+        <section id="form-section">
+            <h2>Fill Out Your Details</h2>
+            <form id="resume-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your Name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Your Email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" placeholder="Your Phone Number" required>
+                
+                <label for="profile">Profile Summary:</label>
+                <textarea id="profile" rows="3" placeholder="Write a brief summary..."></textarea>
+                
+                <label>Education:</label>
+                <div id="education-container">
+                    
+                </div>
+                <button type="button" id="add-education">+ Add Education</button>
+                
+                <label>Skills:</label>
+                <input type="text" id="skills" placeholder="Enter skills separated by commas" required>
+                
+                <label>Experience:</label>
+                <div id="experience-container">
+                    
+                </div>
+                <button type="button" id="add-experience">+ Add Experience</button>
+                
+                <label>Certifications:</label>
+                <div id="certifications-container">
+                    
+                </div>
+                <button type="button" id="add-certification">+ Add Certification</button>
+                <button type="reset" id="clear-form">Clear Form</button>
+            </form>
+        </section>
+        
+        <section id="preview-section">
+            <h2>Your Resume</h2>
+            <div id="resume-preview"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
